@@ -33,7 +33,7 @@ export default function SignLogin() {
                     </div>
                 </div>
             </div>
-            <Footer />
+			<Footer name='footer-main' />
         </>
     )
 }

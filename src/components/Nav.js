@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Scroll } from "../func/Scroll";
 export default function Nav() {
+	const isScrolled = Scroll(250)
 	return (
-		<nav className="main-nav-body">
+		<nav className={isScrolled ? 'scrolled' : 'main-nav-body'}>
 			<div className="logo-search">
 				<span>
 					<Link to={'/'}>
@@ -18,7 +21,7 @@ export default function Nav() {
 			<div>
 				<ul className="nav-list">
 					<li>
-						<Link className="nav-link">Home</Link>
+						<Link to={'/'} className="nav-link">Home</Link>
 					</li>
 					<li className="dropdown">
 						<Link className="nav-link" to={'/allplaces'}>Tours</Link>
@@ -35,7 +38,7 @@ export default function Nav() {
 						<Link className="nav-link" >Tour Guides</Link>
 					</li>
 					<li>
-						<Link className="nav-link">About Us</Link>
+						<Link to={'/aboutus'} className="nav-link">About Us</Link>
 					</li>
 					<li>
 						<Link className="nav-link">Blog</Link>

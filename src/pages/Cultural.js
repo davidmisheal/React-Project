@@ -25,7 +25,7 @@ export default function Cultural() {
                     </div>
                 </div>
             </div>
-            <Footer />
+			<Footer name='footer-main' />
         </>
     );
 }

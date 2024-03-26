@@ -29,7 +29,7 @@ export default function Nautical() {
                     </div>
                 </div>
             </div>
-            <Footer />
+			<Footer name='footer-main' />
         </>
     )
 }

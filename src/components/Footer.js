@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Footer() {
+export default function Footer(params) {
     return (
-        <footer className="footer-main">
+        <footer className={params.name}>
 
             <div className="footer-socials">
                 <img src={require('../imgs/facebook.png')} />

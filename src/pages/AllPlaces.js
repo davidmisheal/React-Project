@@ -47,7 +47,7 @@ export default function All() {
                 />
             ))}
              </div>
-            <Footer />
+             <Footer name='footer-main' />
         </>
     )
 }

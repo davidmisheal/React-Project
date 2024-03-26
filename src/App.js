@@ -12,6 +12,7 @@ import Nautical from './pages/Nautical';
 import Medical from './pages/Medical';
 import All from './pages/AllPlaces';
 import SignLogin from './pages/SignLogin';
+import AboutUs from './pages/AboutUs';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 				<Route path='/medical' element={<Medical />}></Route>
 				<Route path='/allplaces' element={<All/>}></Route>
 				<Route path='/sign' element={<SignLogin/>}></Route>
+				<Route path='/aboutus' element={<AboutUs/>}></Route>
 			</Routes>
 
 		</BrowserRouter>

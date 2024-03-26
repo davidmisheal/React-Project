@@ -1,11 +1,14 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import { useState, useEffect } from "react";
+import { Scroll } from "../func/Scroll";
 
 export default function Home() {
+	const isScrolled = Scroll(250)
 	return (
 		<>
-		<Nav/>
+			<Nav />
 			<div className="main-home-body">
 				<img
 					className="background-image"
@@ -73,7 +76,7 @@ export default function Home() {
 					<h2 className="dest-h2">Explore Our Egypt</h2>
 				</span>
 				<div className="dest-items">
-					<div className="dest-item">
+					<div className={`dest-itemL ${isScrolled ? 'slideToLeft' : ''}`}>
 						<img src={require("../imgs/cairo.jpg")} />
 						<span className="dest-writings">
 							<h4>Cairo</h4>
@@ -83,7 +86,7 @@ export default function Home() {
 							</p>
 						</span>
 					</div>
-					<div className="dest-item">
+					<div className={`dest-itemR ${isScrolled ? 'slideToRight' : ''}`}>
 						<img src={require("../imgs/luxor.jpg")} />
 						<span className="dest-writings">
 							<h4>Luxor</h4>
@@ -93,7 +96,7 @@ export default function Home() {
 							</p>
 						</span>
 					</div>
-					<div className="dest-item">
+					<div className={`dest-itemL ${isScrolled ? 'slideToLeft' : ''}`}>
 						<img src={require("../imgs/aswan.jpg")} />
 						<span className="dest-writings">
 							<h4>Aswan</h4>
@@ -103,7 +106,7 @@ export default function Home() {
 							</p>
 						</span>
 					</div>
-					<div className="dest-item">
+					<div className={`dest-itemR ${isScrolled ? 'slideToRight' : ''}`}>
 						<img src={require("../imgs/red sea.jpg")} />
 						<span className="dest-writings">
 							<h4>Red Sea</h4>
@@ -115,7 +118,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer name='footer-main' />
 		</>
 	);
 }

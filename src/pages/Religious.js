@@ -29,7 +29,7 @@ export default function Religious() {
                     </div>
                 </div>
             </div>
-            <Footer />
+			<Footer name='footer-main' />
         </>
     )
 }

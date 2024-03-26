@@ -1,10 +1,11 @@
 [
-    {
-        "title": "Khan el-Khalili",
-        "desc": "Khan el-Khalili (Arabic: خان الخليلي) is a famous bazaar and souq (or souk) in the historic center of Cairo, Egypt. Established as a center of trade in the Mamluk era and named for one of its several historic caravanserais.",
-        "img": "khan.jpeg",
-        "tourism": "cultural"
-    },
+        {
+            "title": "Khan el-Khalili",
+            "desc": "Khan el-Khalili (Arabic: خان الخليلي) is a famous bazaar and souq (or souk) in the historic center of Cairo, Egypt. Established as a center of trade in the Mamluk era and named for one of its several historic caravanserais.",
+            "img": "khan.jpeg",
+            "tourism": "cultural",
+            "place": "Cairo"
+        },
     {
         "title": "Bibliotheca Alexandrina",
         "desc": "The Bibliotheca Alexandrina (Latin, 'Library of Alexandria';[1] Egyptian Arabic: مكتبة الإسكندرية, romanized: Maktabet al-Eskendereyya, pronounced [mækˈtæb(e)t eskendeˈɾejjæ]) (BA) is a major library and cultural center on the shore of the Mediterranean Sea in Alexandria, Egypt.",
@@ -21,7 +22,8 @@
         "title": "Cairo Opera House",
         "desc": "The Cairo Opera House (Arabic: دار الأوبرا المصرية, Dār el-Opera el-Masreyya; literally 'Egyptian Opera House'), part of Cairo's National Cultural Centre is the main performing arts venue in the Egyptian capital.",
         "img": "opera.jpg",
-        "tourism": "cultural"
+        "tourism": "cultural",
+        "place": "Cairo"
     }, {
         "title": "Kharga Oasis",
         "desc": "Kharga Oasis is located in south Assiut, and it has inside the best deep wells that have lots of therapeutic benefits, including Nasser Wells and Bulaq Wells, which are self-flowing deep wells, stems at a depth of 1000 meters and a temperature of 28 ° C, that surrounded by areas of greenery.",
@@ -62,7 +64,8 @@
         "title": "Skydiving at the Pyramids",
         "desc": "If you’re one of those people who gets a rush from the idea of throwing yourself out of a plane, then this is a level up for you: you can throw yourself out of the plane while looking down over a great wonder of the world.",
         "img": "skydiving.jpg",
-        "tourism": "adventure"
+        "tourism": "adventure",
+        "place": "Cairo"
     },
     {
         "title": "Diving with sharks in the Red Sea",
