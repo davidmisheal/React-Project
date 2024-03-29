@@ -3,8 +3,10 @@ import CardPlace from "../components/CardPlace";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import data from '../data/places.json';
-
+import { Scroll } from "../func/Scroll";
+import FloatNav from '../components/Float-nav'
 export default function All() {
+    const isScrolled=Scroll(250)
     // State variables for filtering
     const [filterCriteria, setFilterCriteria] = useState('');
     const [filteredData, setFilteredData] = useState(data);
@@ -19,7 +21,7 @@ export default function All() {
 
     return (
         <>
-            <Nav />
+            {isScrolled?<FloatNav/>:<Nav/>}
             {/* Filter select */}
             <div className="places-whole">
                 <select

@@ -5,10 +5,10 @@ export default function Footer(params) {
         <footer className={params.name}>
 
             <div className="footer-socials">
-                <img src={require('../imgs/facebook.png')} />
-                <img src={require('../imgs/Instagram_icon.png')} />
-                <img src={require('../imgs/twitter.png')} />
-                <img src={require('../imgs/gmail.png')} />
+                <a href="#" class="social"><i className="fab fa-facebook-f fa-lg" ></i></a>
+                <a href="#" class="social"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="#" class="social"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#" class="social"><i className="fab fa-google-plus-g fa-lg"></i></a>
             </div>
 
             <div className="footer-nav">

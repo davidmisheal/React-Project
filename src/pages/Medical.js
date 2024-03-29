@@ -3,15 +3,19 @@ import Category_part from "../components/Category_part";
 import CardPlace from "../components/CardPlace";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import { Scroll } from "../func/Scroll";
+import FloatNav from '../components/Float-nav'
 
 // Import the data
 import data from "../data/places.json"; // Assuming the data is stored in a JSON file
 
 export default function Medical() {
-    const medicalPlaces=data.filter(place=>place.tourism=='medical')
+    const medicalPlaces = data.filter(place => place.tourism == 'medical')
+    const isScrolled = Scroll(250)
+
     return (
         <>
-            <Nav />
+            {isScrolled ? <FloatNav /> : <Nav />}
             <div className="hist-main">
                 <Category_part img='medi.jpg' title='Medical Tourism' def="Medical tourism in Egypt merges modern healthcare with a rich cultural backdrop. Renowned hospitals in Cairo and specialized clinics offer high-quality care across various specialties. Beyond medical facilities, wellness retreats along the Red Sea provide a holistic approach to recovery. Egypt's medical tourism blends advanced treatments with a journey through a nation steeped in history, offering a unique and rejuvenating experience at the crossroads of healthcare and ancient culture." />
                 <div className="rec-hist-part">
@@ -29,7 +33,7 @@ export default function Medical() {
                     </div>
                 </div>
             </div>
-			<Footer name='footer-main' />
+            <Footer name='footer-main' />
         </>
     )
 }

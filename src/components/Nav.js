@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Scroll } from "../func/Scroll";
+import '@fortawesome/fontawesome-free/css/all.css';
 export default function Nav() {
 	const isScrolled = Scroll(250)
 	return (
-		<nav className={isScrolled ? 'scrolled' : 'main-nav-body'}>
+		<nav className='main-nav-body'>
 			<div className="logo-search">
 				<span>
 					<Link to={'/'}>
@@ -44,7 +45,7 @@ export default function Nav() {
 						<Link className="nav-link">Blog</Link>
 					</li>
 					<li>
-						<Link to={'/sign'}><img className="profile-img" src={require('../imgs/profile.png')} /></Link>
+						<Link to={'/sign'} className="nav-link"><i class="fa-regular fa-user fa-lg"></i></Link>
 					</li>
 				</ul>
 			</div>

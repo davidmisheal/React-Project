@@ -3,13 +3,13 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Category_part from "../components/Category_part";
 import { Scroll } from "../func/Scroll";
-
+import FloatNav from'../components/Float-nav'
 export default function AboutUs() {
     const isScrolled1 = Scroll(250)
     const isScrolled2 = Scroll(700)
     return (
         <>
-            <Nav />
+            {isScrolled1?<FloatNav/>:<Nav/>}
             <div className="about-page">
                 <Category_part img='about.jpg' title='About Us' def="Welcome to MeetThePharaohs.com!, where our love for Egypt's timeless beauty fuels our mission to share its wonders with the world. Inspired by the desire to reveal the hidden treasures and authentic experiences awaiting travelers, we are dedicated to showcasing Egypt's lesser-known gems and promoting responsible tourism practices. Join us on a journey of discovery, adventure, and wonder as we unveil the mysteries of Egypt, one breathtaking moment at a time." />
                 <div className="about-content">
